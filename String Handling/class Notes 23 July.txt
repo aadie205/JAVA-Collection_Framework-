@@ -1,0 +1,34 @@
+public  String[] split(String delimit)
+				1. its parameter is regex
+				2. if the given argument string has special meaning as per regex
+						the current string will be split with the matched characters
+						Ex: "." --> all characters are considered as delimeter
+									finally we will get empty string
+								"[abc]" string is split by the characters a, b and c
+								"[a-z]" strnig is split by the any letter
+						
+						-if we want to treat a regular expression character as normal 
+						character, we must prefix \\ as "\\." it is consider as . only
+						
+						 -if we want to treat normal character as regex 
+						 we must place it in [] as [abc]
+						 								
+				3. if the given argument string does not have any special meaning
+					the current string will be split by the given character it self
+						Ex: "a", string is split by the letter "a"
+						
+				4. if given argument string is completely equal to current string
+						then empty array  will be return with 0 tokens
+				
+
+				5. if given argument string is not matched with any character
+						in current string, current string will be return as one token
+														  
+			 	6. for the given argument string LEFT token is not found,
+			 		but RIGHT token is found, as LEFT token it includes empty string
+			 		
+			 	7. if we pass empty string "" as delimiter,
+			 		each character will be return as a token
+			 		
+			 	8. split method is available from JDK 1.4 version onwards
+			 		before JDK 1.4 we use StringTokenizer class 	
