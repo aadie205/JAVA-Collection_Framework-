@@ -6,7 +6,7 @@ public class TestString {
 		
 		char[] ch= {'A','d','i'};
 		System.out.println(ch);
-		
+		//testing on git
 		
 		String st1=new String();
 		st1="Adi";
